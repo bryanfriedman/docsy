@@ -1,0 +1,21 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $col_id := .Get "color" | default .Ordinal }}
+{{ $height := .Get "height" | default "auto"  }}
+<a id="td-block-{{ .Ordinal }}" class="td-offset-anchor"></a>
+<section class="row td-box td-box--{{ $col_id }} td-box--gradient td-box--height-{{ $height }}">
+	<div class="col">
+        
+        <div class="row">    
+			{{ range $taxonomy := .Site.Taxonomies.featured }}
+                {{ range first 3 $taxonomy.Pages }}
+                <div class="col-lg-4 mb-5 mb-lg-0 text-center ">
+                    <h4 class="h3">{{ .LinkTitle }}</h4>
+                    <p class="mb-0">{{ .Description }}</p>
+                    <p><a href="{{ .Permalink}}">Read now</a></p>
+                </div>
+                {{ end }}
+            {{ end }}
+		</div>
+	</div>
+</section>
+
