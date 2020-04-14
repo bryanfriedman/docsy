@@ -2,11 +2,11 @@
 // Right side toc
 //
 .td-toc {
-    border-left: 1px solid $border-color;
+    // border-left: 1px solid $border-color;
 
     @supports (position: sticky) {
         position: sticky;
-        top: 4rem;
+        top: 7rem;
         height: calc(100vh - 10rem);
         overflow-y: auto;
     }
@@ -42,7 +42,7 @@
         > ul > li > ul > li > a {}
 
         a {
-            color: $gray-600;
+            color: $light;
 
             &:hover {
                 color: $blue;

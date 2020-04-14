@@ -26,7 +26,7 @@
 
 .td-navbar {
     background: $primary;
-    min-height: 4rem;
+    min-height: 5rem;
     margin: 0;
     z-index: 32;
 
@@ -49,13 +49,13 @@
         svg {
             display: inline-block;
             margin: 0 10px;
-            height: 30px;
+            height: 20px;
         }
     }
 
     .nav-link {
         text-transform: none;
-        font-weight: $font-weight-bold;
+        font-weight: $font-weight-normal;
     }
 
     .td-search-input {
