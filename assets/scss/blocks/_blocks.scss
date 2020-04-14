@@ -5,3 +5,13 @@
         position: relative;
     }
 }
+
+.btn-block {
+	border-radius: 0;
+	border: 1px solid $border;
+	background: $gray-800;
+	color: white;
+	&:hover {
+		background: $blockhover;
+	}
+}
